@@ -1,0 +1,55 @@
+
+**** 04/24/14 15:16:03 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-TRAN"  [ d:\work\circuit simulation\tlv3501 simulation\tlv3501-pspicefiles\schematic1\tran.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "TRAN.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../TLV3501.lib" 
+* From [PSPICE NETLIST] section of C:\Users\hanwha\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10u 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source TLV3501
+V_V1         N14281251 0 5
+R_R3         0 N14284826  10k  
+V_V2         N14289989 0 1
+C_C1         0 N14281251  100n  
+V_VThresh         N14293891 0 2.5
+X_U1         N14293959 N14293891 N14281251 0 N14284826 N14289989 TLV3501
+V_V5         N14293963 0  
++SIN 2.5V 2.5V 2000000 0 0 0
+R_R4         N14293963 N14293959  1.5k TC=0,0 
+R_R5         N14293959 N14284826  74k TC=0,0 
+V_V6         N14295992 0  
++SIN 2.5V 2.5V 2000000 0 0 0
+V_V7         N14295907 0 5
+R_R9         N14295992 N14295996  1.5k TC=0,0 
+R_R10         N14295996 N14296042  1.5k TC=0,0 
+
+**** RESUMING TRAN.cir ****
+.END
+
+ERROR(ORPSIM-15141): Less than 2 connections at node N14296042.
+

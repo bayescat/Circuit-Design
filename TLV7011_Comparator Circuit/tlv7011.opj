@@ -1,0 +1,95 @@
+(ExpressProject "TLV7011"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "17.4-2019 S017 (3936576)  [4/19/2021]-[12/01/23]")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File ".\library\tlv7011.olb"
+        (Type "Schematic Library")))
+    ("Allegro Netlist Directory" "allegro")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "61215")
+    (NoModify)
+    (File ".\tlv7011.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (Display_Online_DRC_Results "FALSE"))
+  (Folder "Layout")
+  (Folder "Outputs"
+    (File ".\tlv7011-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\tlv7011-pspicefiles\schematic1\tlv7011_sim.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\tlv7011-pspicefiles\schematic1\tlv7011_sim.sim"
+        (DisplayName "SCHEMATIC1-TLV7011_SIM")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\tlv7011.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\tlv7011.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (Folder "Logs")
+  (PartMRUSelector
+    (Cbreak
+      (FullPartName "Cbreak.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (1N5823
+      (FullPartName "1N5823.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\DI.OLB")
+      (DeviceIndex "0"))
+    (VSIN
+      (FullPartName "VSIN.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VPULSE
+      (FullPartName "VPULSE.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (TLV7011
+      (FullPartName "TLV7011.Normal")
+      (LibraryName "C:\MODELING\TLV7011\PSPICE\TLV7011.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory
+     "C:\Cadence\SPB_17.4\tools\capture\library\pspice")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "d:\sharedrive\onedrive - hyper instrument\003_simulation_circuits-donghun\orcad\tlv7011_comparator circuit\tlv7011.dsn")
+      (Path "Design Resources"
+         "d:\sharedrive\onedrive - hyper instrument\003_simulation_circuits-donghun\orcad\tlv7011_comparator circuit\tlv7011.dsn"
+         "SCHEMATIC1")
+      (Path "Design Resources" "Library")
+      (Path "Outputs"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 2348 0 965"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 5 24 5 2357 24 993")
+        (Scroll "282 531")
+        (Zoom "158")
+        (Occurrence "/"))
+      (Path
+         "D:\SHAREDRIVE\ONEDRIVE - HYPER INSTRUMENT\003_SIMULATION_CIRCUITS-DONGHUN\ORCAD\TLV7011_COMPARATOR CIRCUIT\TLV7011.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
+  (MPSSessionName "kimdo"))

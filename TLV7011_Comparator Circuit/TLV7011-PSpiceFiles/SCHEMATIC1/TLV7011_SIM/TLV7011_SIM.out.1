@@ -1,0 +1,60 @@
+
+**** 11/30/23 22:13:24 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-TLV7011_SIM"  [ d:\sharedrive\onedrive - hyper instrument\003_simulation_circuits-donghun\orcad\tlv7011_comp
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "tlv7011_sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../tlv7011.lib" 
+* From [PSPICE NETLIST] section of C:\Users\kimdo\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 3ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source TLV7011
+.EXTERNAL INPUT V-
+.EXTERNAL INPUT OUT
+.EXTERNAL INPUT IN-
+.EXTERNAL INPUT IN+
+.EXTERNAL INPUT V+
+X_U1         IN+ IN- OUT V+ V- TLV7011
+V_V1         0 0  
++PULSE 0.9 1.1 0 100n 100n 500u 1m
+V_VINN         IN- 0 1
+R_R2         0 V-  1m TC=0,0 
+V_V+         V+ 0 2
+R_R3         V- OUT  10k TC=0,0 
+V_V2         IN+ 0  AC 10
++SIN 0 10 100k 0 0 0
+
+**** RESUMING tlv7011_sim.cir ****
+.END
+
+INFO(ORPSIM-15423): Unable to find index file tlv7011.ind for library file tlv7011.lib.
+
+INFO(ORPSIM-15422): Making new index file tlv7011.ind for library file tlv7011.lib.
+
+Index has 39 entries from 1 file(s).
+
+ERROR(ORPSIM-15143): Voltage source and/or inductor loop involving V_V1. You may break the loop by adding a series resistance
+

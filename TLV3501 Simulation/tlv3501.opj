@@ -1,0 +1,115 @@
+(ExpressProject "TLV3501"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "17.4-2019 S017 (3936576)  [4/19/2021]-[05/27/14]")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File ".\tlv3501.olb"
+        (Type "Schematic Library")
+        (DisplayName ".\tlv3501.olb")))
+    (NoModify)
+    (File ".\tlv3501.DSN"
+      (Type "Schematic Design")
+      (DisplayName ".\tlv3501.DSN"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (RootChangedForceReNetlist "x")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420"))
+  (Folder "Layout")
+  (Folder "Outputs"
+    (File ".\tlv3501-PSpiceFiles\SCHEMATIC1\SCHEMATIC1.net"
+      (Type "Report")
+      (DisplayName ".\tlv3501-PSpiceFiles\SCHEMATIC1\SCHEMATIC1.net")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\tlv3501-pspicefiles\schematic1\tran.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\tlv3501-pspicefiles\schematic1\tran.sim"
+        (DisplayName "SCHEMATIC1-TRAN")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\TLV3501.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\TLV3501.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (BF851A/PLP
+      (FullPartName "BF851A/PLP.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\PHIL_FET.OLB")
+      (DeviceIndex "0"))
+    (QbreakN
+      (FullPartName "QbreakN.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VSIN
+      (FullPartName "VSIN.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VAC
+      (FullPartName "VAC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (TLV3501
+      (FullPartName "TLV3501.Normal")
+      (LibraryName
+         "C:\ELABTRANS_WS\ELABTRANS_DS\PART_NUMBERS\TLV3501\RELEASE_SANKALP\PSPICE\TLV3501_PSPICE_AIO\TLV3501.OLB")
+      (DeviceIndex "0"))
+    (VPULSE
+      (FullPartName "VPULSE.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VSRC
+      (FullPartName "VSRC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.0\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "C:\CADENCE\SPB_16.0\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VPWL_F_RE_FOREVER
+      (FullPartName "VPWL_F_RE_FOREVER.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (PARAM
+      (FullPartName "PARAM.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.0\TOOLS\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Outputs")
+      (Select "Design Resources"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 0 829 0 0 -1 522 19 593"))
+      (Tab 0)))
+  (LastUsedLibraryBrowseDirectory
+     "C:\Cadence\SPB_16.6\tools\capture\library\pspice")
+  (MPSSessionName "kimdo")
+  (Folder "Logs"))

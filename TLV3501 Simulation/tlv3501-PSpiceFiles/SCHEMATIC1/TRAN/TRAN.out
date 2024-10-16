@@ -1,0 +1,321 @@
+
+**** 10/16/24 13:25:37 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-TRAN"  [ D:\OneDrive\OneDrive - Hyper Instrument\003_Simulation_Circuits\PSpice\TLV3501 Simulation\tlv3501-p
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "TRAN.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../TLV3501.lib" 
+* From [PSPICE NETLIST] section of C:\Users\kimdo\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 500us 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source TLV3501
+V_V1         N14281251 0 5
+R_R3         0 N14284826  10k  
+V_V2         N14289989 0 1
+C_C1         0 N14281251  100n  
+V_VThresh         N14293891 0 2.5
+X_U1         N14293959 N14293891 N14281251 0 N14284826 N14289989 TLV3501
+V_V5         N14293963 0  
++SIN 2.5V 1 2000000 0 0 0
+R_R4         N14293963 N14293959  1.5k TC=0,0 
+R_R5         N14293959 N14284826  74k TC=0,0 
+
+**** RESUMING TRAN.cir ****
+.END
+
+WARNING(ORPSIM-15246): Library index file TLV3501.ind does not have the correct format
+
+INFO(ORPSIM-15422): Making new index file TLV3501.ind for library file TLV3501.lib.
+
+Index has 1 entries from 1 file(s).
+
+**** 10/16/24 13:25:37 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-TRAN"  [ D:\OneDrive\OneDrive - Hyper Instrument\003_Simulation_Circuits\PSpice\TLV3501 Simulation\tlv3501-p
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.DD         X_U1.DC         
+          IS   10.000000E-15   10.000000E-15 
+          RS                   10            
+
+
+**** 10/16/24 13:25:37 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-TRAN"  [ D:\OneDrive\OneDrive - Hyper Instrument\003_Simulation_Circuits\PSpice\TLV3501 Simulation\tlv3501-p
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.MCI        X_U1.MCC        X_U1.MCN        X_U1.MCP        
+               NMOS            NMOS            NMOS            PMOS            
+       LEVEL    1               1               1               1            
+           L  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+         VTO    2               2               2              -2            
+          KP    8.600000E-03  215.000000E-06  200.000000E-06  200.000000E-06 
+       GAMMA    0               0               0               0            
+         PHI     .6              .6              .6              .6          
+      LAMBDA    0               0               0               0            
+          IS   10.000000E-15   10.000000E-15   10.000000E-15   10.000000E-15 
+          JS    0               0               0               0            
+          PB     .8              .8              .8              .8          
+        PBSW     .8              .8              .8              .8          
+          CJ    0               0               0               0            
+        CJSW    0               0               0               0            
+        CGSO    0               0               0               0            
+        CGDO    0               0               0               0            
+        CGBO    0               0               0               0            
+         TOX    0               0               0               0            
+          XJ    0               0               0               0            
+       UCRIT   10.000000E+03   10.000000E+03   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1               1               1            
+         VFB    0               0               0               0            
+        LETA    0               0               0               0            
+        WETA    0               0               0               0            
+          U0    0               0               0               0            
+        TEMP    0               0               0               0            
+         VDD    5               5               5               5            
+       XPART    0               0               0               0            
+
+
+               X_U1.MCNV       X_U1.MCPV       X_U1.MCNO       X_U1.MCPO       
+               NMOS            PMOS            NMOS            PMOS            
+       LEVEL    1               1               1               1            
+           L  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+         VTO    -.27             .28            2              -2            
+          KP    2.000000E-03    2.000000E-03     .035            .035        
+       GAMMA    0               0               0               0            
+         PHI     .6              .6              .6              .6          
+      LAMBDA    0               0               0               0            
+          IS   10.000000E-15   10.000000E-15   10.000000E-15   10.000000E-15 
+          JS    0               0               0               0            
+          PB     .8              .8              .8              .8          
+        PBSW     .8              .8              .8              .8          
+          CJ    0               0               0               0            
+        CJSW    0               0               0               0            
+        CGSO    0               0               0               0            
+        CGDO    0               0               0               0            
+        CGBO    0               0               0               0            
+         TOX    0               0               0               0            
+          XJ    0               0               0               0            
+       UCRIT   10.000000E+03   10.000000E+03   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1               1               1            
+         VFB    0               0               0               0            
+        LETA    0               0               0               0            
+        WETA    0               0               0               0            
+          U0    0               0               0               0            
+        TEMP    0               0               0               0            
+         VDD    5               5               5               5            
+       XPART    0               0               0               0            
+
+
+               X_U1.MNSW       X_U1.MPSW       X_U1.MCNS       X_U1.NEN        
+               NMOS            PMOS            NMOS            NMOS            
+       LEVEL    1               1               1               1            
+           L  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+         VTO    2.5            -2.5              .5              .5          
+          KP     .035            .035         200.000000E-06  200.000000E-06 
+       GAMMA    0               0               0               0            
+         PHI     .6              .6              .6              .6          
+      LAMBDA    0               0               0               0            
+          IS    1.000000E-18    1.000000E-18   10.000000E-15    1.000000E-18 
+          JS    0               0               0               0            
+          PB     .8              .8              .8              .8          
+        PBSW     .8              .8              .8              .8          
+          CJ    0               0               0               0            
+        CJSW    0               0               0               0            
+        CGSO    0               0               0               0            
+        CGDO    0               0               0               0            
+        CGBO    0               0               0               0            
+         TOX    0               0               0               0            
+          XJ    0               0               0               0            
+       UCRIT   10.000000E+03   10.000000E+03   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1               1               1            
+         VFB    0               0               0               0            
+        LETA    0               0               0               0            
+        WETA    0               0               0               0            
+          U0    0               0               0               0            
+        TEMP    0               0               0               0            
+         VDD    5               5               5               5            
+       XPART    0               0               0               0            
+
+
+               X_U1.PEN        X_U1.MNIQ       
+               PMOS            NMOS            
+       LEVEL    1               1            
+           L  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06 
+         VTO   -1.2              .5          
+          KP  200.000000E-06     .035        
+       GAMMA    0               0            
+         PHI     .6              .6          
+      LAMBDA    0               0            
+          IS    1.000000E-18    1.000000E-18 
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+          CJ    0               0            
+        CJSW    0               0            
+        CGSO    0               0            
+        CGDO    0               0            
+        CGBO    0               0            
+         TOX    0               0            
+          XJ    0               0            
+       UCRIT   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    5               5            
+       XPART    0               0            
+
+
+**** 10/16/24 13:25:37 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-TRAN"  [ D:\OneDrive\OneDrive - Hyper Instrument\003_Simulation_Circuits\PSpice\TLV3501 Simulation\tlv3501-p
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(X_U1.7)    4.9922 (X_U1.8)    1.0555 (X_U1.9)    1.0240 (X_U1.10)    2.5000    
+
+(X_U1.11)    3.8655                   (X_U1.12)    5.3416                       
+
+(X_U1.13)    0.0000                   (X_U1.14)    5.0000                       
+
+(X_U1.15)    4.9922                   (X_U1.16)     .4525                       
+
+(X_U1.17)    4.1878                   (X_U1.18)    6.5000                       
+
+(X_U1.19)    2.7831                   (X_U1.20)    2.7071                       
+
+(X_U1.21)    4.9826                   (X_U1.22)    2.5493                       
+
+(X_U1.23)    2.5000                   (X_U1.24)    2.5000                       
+
+(X_U1.25)    2.5493                   (X_U1.26) 886.7E-06                       
+
+(X_U1.27)    4.9991                   (X_U1.28)    6.5000                       
+
+(X_U1.29)    5.0000                   (X_U1.30) 902.5E-06                       
+
+(X_U1.31)    4.9991                   (X_U1.32)    5.0000                       
+
+(X_U1.33)    4.9795                   (X_U1.34) 8.798E-06                       
+
+(X_U1.35)    4.9827                   (X_U1.36)    9.9795                       
+
+(X_U1.37)    3.3207                   (X_U1.38)    -.0173                       
+
+(X_U1.39)    4.6068                   (X_U1.40)    5.0000                       
+
+(X_U1.41) 9.909E-06                   (X_U1.42)    1.0046                       
+
+(X_U1.43)    1.0000                   (X_U1.44) 8.798E-06                       
+
+(X_U1.45)     .0011                   (X_U1.46)    4.9109                       
+
+(X_U1.47)    1.0000                   (X_U1.48) 8.798E-06                       
+
+(X_U1.49)     .0103                   (X_U1.50)    1.0000                       
+
+(X_U1.51)    1.0000                   (X_U1.52)   -1.0000                       
+
+(X_U1.53)    1.0000                   (X_U1.54)     .6551                       
+
+(X_U1.55)     .0051                   (N14281251)    5.0000                     
+
+(N14284826)    4.9796                 (N14289989)    1.0000                     
+
+(N14293891)    2.5000                 (N14293959)    2.5493                     
+
+(N14293963)    2.5000                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -3.761E-03
+    V_V2        -1.000E-12
+    V_VThresh   -4.500E-12
+    V_V5         3.284E-05
+    X_U1.V28     0.000E+00
+    X_U1.V29     5.280E-17
+    X_U1.V30     0.000E+00
+    X_U1.V52    -1.009E-04
+    X_U1.V53     8.798E-18
+    X_U1.V55     2.000E-12
+    X_U1.V56     1.000E-12
+    X_U1.V57     5.099E-09
+
+    TOTAL POWER DISSIPATION   1.88E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/16/24 13:25:37 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-TRAN"  [ D:\OneDrive\OneDrive - Hyper Instrument\003_Simulation_Circuits\PSpice\TLV3501 Simulation\tlv3501-p
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =       29.58
+
